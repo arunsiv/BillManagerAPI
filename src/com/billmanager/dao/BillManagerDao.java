@@ -25,15 +25,6 @@ public class BillManagerDao {
 	}
 	
 	public String getAllBill() {
-		System.out.println("inside get all bill");
-	
-		/*Bill[] bills = new Bill[billMap.size()];
-		int index = 0;
-		for (Map.Entry<Integer, Bill> mapEntry : billMap.entrySet()) {
-			bills[index] = mapEntry.getValue();
-		    index++;
-		}*/
-		
 		return calculateAllBillShare();
 	}
 	
@@ -78,8 +69,7 @@ public class BillManagerDao {
 		return gson.toJson(billJson);	
 	}
 	
-	public String calculateAllBillShare() {
-		
+	public String calculateAllBillShare() {		
 		JsonArray bJson = new JsonArray();
 		
 		for (Map.Entry<Integer, Bill> mapEntry : billMap.entrySet()) {

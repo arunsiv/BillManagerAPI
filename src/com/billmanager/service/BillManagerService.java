@@ -14,7 +14,6 @@ import com.billmanager.beans.Bill;
 import com.billmanager.dao.BillManagerDao;
 
 @Path("/BillManagerService")
-
 public class BillManagerService {
 	
 	BillManagerDao bmDao = new BillManagerDao(); 
